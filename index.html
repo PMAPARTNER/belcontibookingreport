@@ -25,12 +25,15 @@ nav{position:sticky;top:0;z-index:999;height:var(--nav);background:var(--bd);dis
 .hero{background:linear-gradient(150deg,#001f54 0%,var(--bd) 45%,var(--bm) 100%);padding:72px 40px 88px;text-align:center;color:#fff;position:relative;overflow:hidden;}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0,112,192,.25) 0%, transparent 70%);pointer-events:none;}
 .htag{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 16px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#90c8ee;margin-bottom:22px;}
-.hero h1{font-size:44px;font-weight:900;letter-spacing:-.5px;margin-bottom:6px;}.hero h2{font-size:21px;font-weight:400;color:#90c0e0;margin-bottom:4px;}.hero .hn{font-size:14px;color:#6090b0;margin-bottom:52px;}
+.hero h1{font-size:44px;font-weight:900;letter-spacing:-.5px;margin-bottom:6px;}
+.hero h2{font-size:21px;font-weight:400;color:#90c0e0;margin-bottom:4px;}
+.hero .hn{font-size:14px;color:#6090b0;margin-bottom:52px;}
 .hkrow{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;position:relative;z-index:1;}
 .hk{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:26px 32px;min-width:180px;text-align:center;backdrop-filter:blur(8px);transition:transform .2s,background .2s;}
 .hk:hover{transform:translateY(-3px);background:rgba(255,255,255,.18);}
 .hk-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#80b8d8;margin-bottom:10px;}
-.hk-val{font-size:48px;font-weight:900;color:#fff;line-height:1;letter-spacing:-1px;}.hk-sub{font-size:11px;color:#70a8c8;margin-top:7px;}
+.hk-val{font-size:48px;font-weight:900;color:#fff;line-height:1;letter-spacing:-1px;}
+.hk-sub{font-size:11px;color:#70a8c8;margin-top:7px;}
 .hk-d{display:inline-block;margin-top:9px;background:rgba(34,197,94,.2);border:1px solid rgba(34,197,94,.35);border-radius:12px;padding:2px 10px;font-size:11px;font-weight:700;color:#86efac;}
 .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}.sec{padding:60px 0;}.sec-a{background:var(--s1);}.sec-b{background:var(--s2);}
 .sec-eye{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.8px;color:var(--bl);margin-bottom:8px;}
@@ -38,7 +41,7 @@ nav{position:sticky;top:0;z-index:999;height:var(--nav);background:var(--bd);dis
 .sec-dsc{font-size:13px;color:var(--sub);max-width:660px;}.sec-hdr{margin-bottom:32px;}
 .hl{background:#fff;border:1px solid var(--brdr);border-left-width:5px;border-left-color:var(--bl);border-radius:0 10px 10px 0;padding:18px 22px;margin-bottom:28px;font-size:14px;font-weight:500;color:var(--txt);line-height:1.7;}
 .hl strong{color:var(--bd);}.hl .ac{color:var(--bl);font-weight:700;}
-.krow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:32px;}
+.krow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px;}
 .kc{background:var(--card);border:1.5px solid var(--brdr);border-radius:14px;padding:24px 24px 20px;box-shadow:0 2px 10px rgba(0,53,128,.07);position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
 .kc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--bl);}
 .kc:hover{box-shadow:0 6px 22px rgba(0,53,128,.13);transform:translateY(-2px);}
@@ -61,10 +64,11 @@ thead th.r{text-align:right;}tbody tr{border-bottom:1px solid #e8f0f8;transition
 tbody tr.sub td{color:var(--sub);font-size:12px;background:#fafcff;}tbody tr.sub td:first-child{padding-left:34px;}
 tbody td{padding:12px 16px;font-size:13px;color:var(--txt);}tbody td.r{text-align:right;font-variant-numeric:tabular-nums;}tbody td.b{font-weight:700;}
 tfoot tr{background:#ddeeff;}tfoot td{padding:13px 16px;font-weight:800;color:var(--bd);border-top:2px solid var(--bl);font-size:13px;}tfoot td.r{text-align:right;}
-.self-row>td{background:#d4eaff!important;font-weight:700;color:var(--bd)!important;}.up{color:var(--grn);font-weight:700;}.dn{color:var(--red);font-weight:700;}
+.self-row>td{background:#d4eaff!important;font-weight:700;color:var(--bd)!important;}
+.up{color:var(--grn);font-weight:700;}.dn{color:var(--red);font-weight:700;}
 .bk{display:inline-block;background:var(--bd);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:5px;}.bk.gold{background:#b45309;}
 .igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:8px;}
-.ip{background:var(--card);border:1.5px solid var(--brdr);border-radius:12px;padding:14px 18px;display:flex;align-items:flex-start;gap:12px;box-shadow:0 1px 5px rgba(0,53,128,.06);}
+.ip{background:var(--card);border:1.5px solid var(--brdr);border-radius:12px;padding:14px 18px;display:flex;align-items:flex-start;gap:12px;box-shadow:0 1hx 5px rgba(0,53,128,.06);}
 .ip-ic{font-size:22px;flex-shrink:0;margin-top:1px;}.ip-tx{font-size:13px;color:var(--txt);font-weight:500;line-height:1.45;}.ip-tx strong{color:var(--bd);}
 footer{background:var(--bd);color:#5a88b0;text-align:center;padding:52px 40px 40px;}
 .ft-pre{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:#3a6090;margin-bottom:14px;}
@@ -72,37 +76,7 @@ footer{background:var(--bd);color:#5a88b0;text-align:center;padding:52px 40px 40
 footer p{font-size:12px;color:#4a7090;line-height:1.9;}footer strong{color:#90b8d0;}
 #st{position:fixed;bottom:28px;right:28px;width:42px;height:42px;border-radius:50%;background:var(--bd);color:#fff;border:none;cursor:pointer;font-size:18px;box-shadow:0 4px 14px rgba(0,53,128,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;}
 #st.vis{opacity:1;}
-</style>
-</head>
-<body>
-<nav>
-  <div class="nb"><div class="nb-logo"><em>Booking</em>.com</div><div class="nb-sub">HaftalÄ±k Rapor</div></div>
-  <div class="nl">
-    <div class="ni"><a href="#ozet">ğŸ“Š Genel Ã–zet â–¾</a><div class="dd"><a href="#ozet">HaftalÄ±k KPI Ã–zeti</a><a href="#ozet">Pick-Up KarÅŸÄ±laÅŸtÄ±rmasÄ±</a><a href="#ozet">2026 YÄ±l ToplamÄ±</a></div></div>
-    <div class="ni"><a href="#gunluk">ğŸ“… GÃ¼nlÃ¼k SatÄ±ÅŸ â–¾</a><div class="dd"><a href="#gunluk">15â€“21 Haz Tablosu</a><a href="#gunluk">Geceleme GrafiÄŸi</a><a href="#gunluk">Gelir & ADR GrafiÄŸi</a></div></div>
-    <div class="ni"><a href="#oda">ğŸ› Oda Tipleri â–¾</a><div class="dd"><a href="#oda">Geceleme DaÄŸÄ±lÄ±mÄ±</a><a href="#oda">ADR KarÅŸÄ±laÅŸtÄ±rmasÄ±</a><a href="#oda">Oda Detay Tablosu</a></div></div>
-    <div class="ni"><a href="#siralama">ğŸ† SÄ±ralama â–¾</a><div class="dd"><a href="#siralama">DÃ¶nÃ¼ÅŸÃ¼m Hunisi</a><a href="#rakip">Rakip KarÅŸÄ±laÅŸtÄ±rmasÄ±</a><a href="#rakip">Puan Grafikleri</a></div></div>
-    <div class="ni"><a href="#milliyet">ğŸŒ Pazar & Talep â–¾</a><div class="dd"><a href="#milliyet">Ã¼lke DaÄŸÄ±lÄ±mÄ±</a><a href="#milliyet">Talep Bilgileri</a></div></div>
-  </div>
-  <div class="nd"><span class="nd-dot"></span>18â€“24 Haz 2026</div>
-</nav>
-<div class="hero">
-  <div class="htag">Booking.com Â· HaftalÄ±k Performans Raporu</div>
-  <h1>18 â€“ 24 Haz 2026</h1><h2>Belconti Resort Hotel Â· Belek</h2><p class="hn">TÃ¼rkiye Â· Booking.com Partner</p>
-  <div class="hkrow">
-    <div class="hk"><div class="hk-lbl">Pick-Up Geceleme</div><div class="hk-val">230</div><div class="hk-sub">Son 7 gÃ¼n</div><span class="hk-d">â†‘ %995 geÃ§en yÄ±la gÃ¶re</span></div>
-    <div class="hk"><div class="hk-lbl">Pick-Up Oda KazancÄ±</div><div class="hk-val">â‚¬84,5K</div><div class="hk-sub">Son 7 gÃ¼n</div><span class="hk-d">â†‘ %1.128 geÃ§en yÄ±la gÃ¶re</span></div>
-    <div class="hk"><div class="hk-lbl">Pick-Up ADR</div><div class="hk-val">â‚¬367</div><div class="hk-sub">Ort. gÃ¼nlÃ¼k fiyat</div><span class="hk-d">â†‘ %12 geÃ§en yÄ±la gÃ¶re</span></div>
-    <div class="hk"><div class="hk-lbl">2026 Toplam Geceleme</div><div class="hk-val">1.343</div><div class="hk-sub">YÄ±l baÅŸÄ±ndan itibaren</div><span class="hk-d">â†‘ %62,59 geÃ§en yÄ±la gÃ¶re</span></div>
-    <div class="hk"><div class="hk-lbl">BÃ¶lge SÄ±ralamasÄ±</div><div class="hk-val">#1</div><div class="hk-sub">223 tesis arasÄ±nda</div><span class="hk-d">â†‘ BÃ¶lge Lideri</span></div>
-  </div>
-</div>
-<!-- Sections omitted for brevity in Drive version - full content in GitHub -->
-<footer>
-  <div class="ft-pre">HazÄ±rlayan</div>
-  <div class="ft-logo"><img src="https://drive.google.com/uc?export=view&id=1myKB9XkmC9sf-QBEteYPHDk0rOXhKFa6" alt="PMA Partner" style="height:44px;object-fit:contain;display:block;" onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#003580\'>PMA PARTNER</span>'"/></div>
-  <p><strong>Belconti Resort Hotel</strong> Â· Booking.com HaftalÄ±k Performans Raporu<br>DÃ¶nem: 18â€“24 Haz 2026 Â· Rapor tarihi: 24 Haz 2026</p>
-</footer>
-<button id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">â†‘</button>
-</body>
-</html>
+</style></head><body><nav><div class="nb"><div class="nb-logo"><em>Booking</em>.com</div><div class="nb-sub">HaftalÄ±k Rapor</div></div><div class="nl"><div class="ni"><a href="#ozet">ğŸ“Š Genel Ã–zet â–¾</a><div class="dd"><a href="#ozet">HaftalÄ±k KPI Ã–zeti</a><a href="#ozet">Pick-Up KarÄŸÄ±laÅŸtÄ±rmasÄ±</a><a href="#ozet">2026 YÄ±l ToplamÄ±</a></div></div><div class="ni"><a href="#gunluk">ğŸ“… GÃ¸nlÃ¼k SatÄ±ÅŸ â–¾</a><div class="dd"><a href="#gunluk">15â€“21 Haz Tablosu</a><a href="#gunluk">Geceleme GrafiÄŸi</a><a href="#gunluk">Gelir & ADR GrafiÄŸi</a></div></div><div class="ni"><a href="#oda">ğŸ› Oda Tipleri â–¾</a><div class="dd"><a href="#oda">Geceleme DaÄŸÄ±lÄ±mÄ±</a><a href="#oda">ADR KarÄŸÄ±laÅŸtÄ±rmasÄ±</a><a href="#oda">Oda Detay Tablosu</a></div></div><div class="ni"><a href="#siralama">ğŸ† SÄ±ralama â–¾</a><div class="dd"><a href="#siralama">DÃ¶nË\cñ÷3Lœ!Õ¹¥Í¤ğ½„øñ„¡É•˜ôˆÉ…­¥ÀˆùI…­¥À-…ËÅ±‡}ÑÅÉµ…ÏÄğ½„øñ„¡É•˜ôˆÉ…­¥ÀˆùAÕ…¸É…™¥­±•É¤ğ½„øğ½‘¥Øøğ½‘¥Øøñ‘¥Ø±…ÍÌô‰¹¤ˆøñ„¡É•˜ôˆµ¥±±¥å•ĞˆûÂ~24A…é…È€˜Q…±•ÀƒŠZøğ½„øñ‘¥Ø±…ÍÌô‰‘ˆøñ„¡É•˜ôˆµ¥±±¥å•Ğˆûq±­”‡Å³Å·Äğ½„øñ„¡É•˜ôˆµ¥±±¥å•ĞˆùQ…±•À	¥±¥±•É¤ğ½„øğ½‘¥Øøğ½‘¥Øøğ½‘¥Øøñ‘¥Ø±…ÍÌô‰¹ˆøñÍÁ…¸±…ÍÌô‰¹µ‘½Ğˆøğ½ÍÁ…¸øÄãŠLÈĞ!…è€ÈÀÈØğ½‘¥Øøğ½¹…Øøñ‘¥Ø±…ÍÌô‰¡•É¼ˆøñ‘¥Ø±…ÍÌô‰¡Ñ…œˆù	½½­¥¹œ¹½´ƒ
+Ü!…™Ñ…³Å¬A•É™½Éµ…¹ÌI…Á½ÉÔğ½‘¥Øøñ ÄøÄàƒŠL€ÈĞ!…è€ÈÀÈØğ½ Äøñ Èù	•±½¹Ñ¤I•Í½ÉĞ!½Ñ•°ƒ
+Ü	•±•¬ğ½ ÈøñÀ±…ÍÌô‰¡¸ˆùSñÉ­¥å”ƒ
+Ü	½½­¥¹œ¹½´A…ÉÑ¹•Èğ½Àøñ‘¥Ø±…ÍÌô‰¡­É½Üˆøñ‘¥Ø±…ÍÌô‰¡¬ˆøñ‘¥Ø±…ÍÌô‰¡¬µ±‰°ˆùA¥¬µUÀ••±•µ”ğ½‘¥Øøñ‘¥Ø±…ÍÌô‰¡¬µÙ…°ˆøÈÌÀğ½‘¥Øøñ‘¥Ø±…ÍÌô‰¡¬µÍÕˆˆùM½¸€ÜŸá¸ğ½‘¥ØøñÍÁ…¸±…ÍÌô‰¡¬µˆûŠD€”ääÔ—•¸ç"–Æ|;g&SÂ÷7ããÂöF—cãÆF—b6Æ73Ò&†²#ãÆF—b6Æ73Ò&†²ÖÆ&Â#å–6²ÕWöF¶¦æ<KÂöF—cãÆF—b6Æ73Ò&†²×fÂ#î(*ÃƒBÃT³ÂöF—cãÆF—b6Æ73Ò&†²×7V"#å6öâr|;†ãÂöF—cãÇ7â6Æ73Ò&†²ÖB#î(iSã#‚v\:vVâœKÆ|;g&SÂ÷7ããÂöF—cãÆF—b6Æ73Ò&†²#ãÆF—b6Æ73Ò&†²ÖÆ&Â#å–6²ÕWE#ÂöF—cãÆF—b6Æ73Ò&†²×fÂ#î(*Ã3csÂöF—cãÆF—b6Æ73Ò&†²×7V"#ä÷'Bâ|;†æÌ;Æ²f—–CÂöF—cãÇ7â6Æ73Ò&†²ÖB#î(iS"v\:vVâœˆ[Hğíœ™OÜÜ[Ù]]ˆÛ\ÜÏHšÈ]ˆÛ\ÜÏHšË[›ŒŒˆÜ[HÙXÙ[[YOÙ]]ˆÛ\ÜÏHšË]˜[ŒKŒÍÏÙ]]ˆÛ\ÜÏHšË\İXˆ–q,[˜qgñ,[™[ˆ]X˜\™[Ù]Ü[ˆÛ\ÜÏHšËY¸¡¤H	MŒˆMNHÙpéÙ[ˆr yla gÃ¶re</span></div><div class="hk"><div class="hk-lbl">BÃ¶lge SÄ±ralamasÄ±</div><div class="hk-val">#1</div><div class="hk-sub">223 tesis arasÄ±nda</div><span class="hk-d">â†‘ BÃ¶lge Lideri</span></div></div></div><footer><div class="ft-pre">HazÄ­rlayan</div><div class="ft-logo"><img src="https://drive.google.com/uc?export=view&id=1myKB9XkmC9sf-QBEteYPHDk0rOXhKFa6" alt="PMA Partner" style="height:44px;object-fit:contain;display:block;" onerror="this.outerHTML='<span style=\'font-size:18px;font-weight:900;color:#003580\'>PMA PARTNER</span>'"/></div><p><strong>Belconti Resort Hotel</strong> Â· Booking.com HaftalÄ±k Performans Raporu<br>DÃ¶nem: 18â€“24 Haz 2026 Â· Rapor tarihi: 24 Haz 2026</p></footer><button id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">â†‘</button></body></html>
