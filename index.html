@@ -20,7 +20,7 @@ nav{position:sticky;top:0;z-index:999;height:var(--nav);background:var(--bd);dis
 .dd a{display:block;padding:11px 18px;font-size:13px;font-weight:500;color:var(--txt);text-decoration:none;border-bottom:1px solid #eef3f8;transition:background .1s,color .1s;}
 .dd a:last-child{border-bottom:none;}.dd a:hover{background:var(--s2);color:var(--bd);}
 .nd{margin-left:auto;color:#7aaac8;font-size:12px;display:flex;align-items:center;gap:7px;flex-shrink:0;}
-.nd-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:blink 2s ease-in-out infinite;}
+.nd-dot{width:7px;height:7px;background:#22c55e;border-radius;50%;animation:blink 2s ease-in-out infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:.35};}
 .hero{background:linear-gradient(150deg,#001f54 0%,var(--bd) 45%,var(--bm) 100%);padding:72px 40px 88px;text-align:center;color:#fff;position:relative;overflow:hidden;}
 .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0,112,192,.25) 0%, transparent 70%);pointer-events:none;}
@@ -38,7 +38,7 @@ nav{position:sticky;top:0;z-index:999;height:var(--nav);background:var(--bd);dis
 .sec-dsc{font-size:13px;color:var(--sub);max-width:660px;}.sec-hdr{margin-bottom:32px;}
 .hl{background:#fff;border:1px solid var(--brdr);border-left-width:5px;border-left-color:var(--bl);border-radius:0 10px 10px 0;padding:18px 22px;margin-bottom:28px;font-size:14px;font-weight:500;color:var(--txt);line-height:1.7;}
 .hl strong{color:var(--bd);}.hl .ac{color:var(--bl);font-weight:700;}
-.krow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:180x;margin-bottom:32px;}
+.krow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:32px;}
 .kc{background:var(--card);border:1.5px solid var(--brdr);border-radius:14px;padding:24px 24px 20px;box-shadow:0 2px 10px rgba(0,53,128,.07);position:relative;overflow:hidden;transition:box-shadow .2s,transform .2s;}
 .kc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--bl);}
 .kc:hover{box-shadow:0 6px 22px rgba(0,53,128,.13);transform:translateY(-2px);}
@@ -70,27 +70,29 @@ footer{background:var(--bd);color:#5a88b0;text-align:center;padding:52px 40px 40
 .ft-pre{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:#3a6090;margin-bottom:14px;}
 .ft-logo{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:10px;padding:10px 22px;margin-bottom:22px;min-height:58px;min-width:140px;}
 footer p{font-size:12px;color:#4a7090;line-height:1.9;}footer strong{color:#90b8d0;}
-#st{position:fixed;bottom:28px;right:28px;width:42px;height:42px;border-radius:50%;background:var(--bd);color:#fff;border:none;cursor:pointer;font-size:18px;box-shadow:0 4px 14px rgba(0,53,128,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;}
+#id(st){position:fixed;bottom:28px;right:28px;width:42px;height:42px;border-radius:50%;background:var(--bd);color:#fff;border:none;cursor:pointer;font-size:18px;box-shadow:0 4px 14px rgba(0,53,128,.4);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;}
 #st.vis{opacity:1;}
 </style>
 </head>
 <body>
-<nav>
+<nvW�
   <div class="nb"><div class="nb-logo"><em>Booking</em>.com</div><div class="nb-sub">Haftalık Rapor</div></div>
-  <div class="nl">
-    <div class="ni"><a href="#ozet">📊 Genel Özet ▾</a><div class="dd"><a href="#ozet">Haftalık KPI Özeti</a><a href="#ozet">Pick-Up Karşılaştırması</a><a href="#ozet">2026 Yıl Toplamı</a></div></div>
-    <div class="ni"><a href="#gunluk">📅 Günlük Satış ▾</a><div class="dd"><a href="#gunluk">15–21 Haz Tablosu</a><a href="#gunluk">Geceleme Grafiği</a><a href="#gunluk">Gelir & ADR Grafiği</a></div></div>
+  
+<div class="nl">
+    <div class="ni"><a href="#ozet">📊 Genel Özet ▾</a><div class="dd"><a href="#ozet">Haftalık KPI Özeti</a><a href="#ozet">Pick-Up Karğılaştırması</a><a href="#ozet">2026 Yıl Toplamı</a></div></div>
+    <div class="ni"><a href="#gunluk">📅 Günlük Satış ▾</a><div class="dd"><a href="#gunluk">1–21 Haz </a><a href="#gunluk">Geceleme Grafiği</a><a href="#gunluk">Gelir & ADR Grafiği</a></div></div>
     <div class="ni"><a href="#oda">🛏 Oda Tipleri ▾</a><div class="dd"><a href="#oda">Geceleme Dağılımı</a><a href="#oda">ADR Karşılaştırması</a><a href="#oda">Oda Detay Tablosu</a></div></div>
-    <div class="ni"><a href="#siralama">🏆 Sıralama ▾</a><div class="dd"><a href="#siralama">Dönc�şüm Hunisi</a><a href="#rakip">Rakip Karşılaştırması</a><a href="#rakip">Puan Grafikleri</a></div></div>
+    <div class="ni"><a href="#siralama">🏆 Sıralama ▾</a><div class="dd"><a href="#siralama">Dönüşüm Hunisi</a><a href="#rakip">Rakip Karşılaştırması</a><a href="#rakip">Puan Grafikleri</a></div></div>
     <div class="ni"><a href="#milliyet">🌍 Pazar & Talep ▾</a><div class="dd"><a href="#milliyet">Ülke Dağılımı</a><a href="#milliyet">Talep Bilgileri</a></div></div>
-  </div>
+</div>
+
   <div class="nd"><span class="nd-dot"></span>18–24 Haz 2026</div>
 </nav>
 <div class="hero">
   <div class="htag">Booking.com · Haftalık Performans Raporu</div>
-  <h1>18 – 24 Haz 2026</h1><h2>Belconti Resort Hotel · Belek</h2><p class="hn">Türkiye · Booking.com Partner</p>
+  <h1>18 – 24 Haz 2026</h1><h2>Belconti Resort Hotel · Belek</h2><p class="ht">Tôrkiye · Booking.com Partner</p>
   <div class="hkrow">
-    <div class="hk"><div class="hk-lbl">Pick-Up Geceleme</div><div class="hk-val">230</div><div class="hk-sub">Son 7 gün</div><span class="hk-d">↑ %995 geçen yıla göre</span></div>
+    <div class="hk"><div class="hk-lbl">Pick-Up Geceleme</div><div class="hk-val">230</div><div class="hk-sub">Son 7 gün</div><span class="hk-d">↑ %995 geçen y\11la göre</span></div>
     <div class="hk"><div class="hk-lbl">Pick-Up Oda Kazancı</div><div class="hk-val">€84,5K</div><div class="hk-sub">Son 7 gün</div><span class="hk-d">↑ %1.128 geçen yıla göre</span></div>
     <div class="hk"><div class="hk-lbl">Pick-Up ADR</div><div class="hk-val">€367</div><div class="hk-sub">Ort. günlük fiyat</div><span class="hk-d">↑ %12 geçen yıla göre</span></div>
     <div class="hk"><div class="hk-lbl">2026 Toplam Geceleme</div><div class="hk-val">1.343</div><div class="hk-sub">Yıl başından itibaren</div><span class="hk-d">↑ %62,59 geçen yıla göre</span></div>
